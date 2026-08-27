@@ -34,5 +34,9 @@ struct RootView: View {
 }
 
 #Preview {
-    RootView(container: AppDependencyContainer())
+    RootView(
+        container: AppDependencyContainer(
+            babyProfileRepository: InMemoryBabyProfileRepository()
+        )
+    )
 }
