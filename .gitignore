@@ -23,6 +23,9 @@ xcuserdata/
 .swiftpm/
 .build/
 
+# sourcekit-lsp (VSCode 인덱싱) — 머신별 절대경로가 박히므로 커밋하지 않음
+buildServer.json
+
 # CocoaPods (사용 시 주석 해제)
 # Pods/
 
