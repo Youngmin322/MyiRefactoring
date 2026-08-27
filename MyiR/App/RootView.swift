@@ -8,10 +8,28 @@
 import SwiftUI
 
 struct RootView: View {
-    let container: AppDependencyContainer
+    private let container: AppDependencyContainer
+    @State private var viewModel: RootViewModel
+
+    init(container: AppDependencyContainer) {
+        self.container = container
+        _viewModel = State(initialValue: container.makeRootViewModel())
+    }
 
     var body: some View {
-        Text("MyiR")
+        Group {
+            switch viewModel.state {
+            case .loading:
+                ProgressView()
+
+            case .needsRegistration:
+                BabyRegisterView(viewModel: container.makeBabyRegisterViewModel())
+
+            case .registered:
+                HomeView()
+            }
+        }
+        .task { await viewModel.observe() }
     }
 }
 

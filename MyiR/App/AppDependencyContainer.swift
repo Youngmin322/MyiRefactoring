@@ -9,5 +9,17 @@ import Foundation
 
 @MainActor
 final class AppDependencyContainer {
-    init() {}
+    private let babyProfileRepository: BabyProfileRepository
+
+    init() {
+        babyProfileRepository = InMemoryBabyProfileRepository()
+    }
+
+    func makeRootViewModel() -> RootViewModel {
+        RootViewModel(repository: babyProfileRepository)
+    }
+
+    func makeBabyRegisterViewModel() -> BabyRegisterViewModel {
+        BabyRegisterViewModel(repository: babyProfileRepository)
+    }
 }
