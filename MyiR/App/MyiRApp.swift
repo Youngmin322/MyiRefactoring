@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct MyiRApp: App {
+    private let container = AppDependencyContainer()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView(container: container)
         }
     }
 }
