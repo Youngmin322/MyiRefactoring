@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		C1C78EBA30408F2100389BD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D8E9BA53040730700A18E36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D8E9BAC3040730700A18E36;
+			remoteInfo = MyiR;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1D8E9BAD3040730700A18E36 /* MyiR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyiR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1C78EB630408F2100389BD3 /* MyiRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyiRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = MyiR;
 			sourceTree = "<group>";
 		};
+		C1C78EB730408F2100389BD3 /* MyiRTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MyiRTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1D8E9BAA3040730700A18E36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1C78EB330408F2100389BD3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				1D8E9BAF3040730700A18E36 /* MyiR */,
+				C1C78EB730408F2100389BD3 /* MyiRTests */,
 				1D8E9BAE3040730700A18E36 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				1D8E9BAD3040730700A18E36 /* MyiR.app */,
+				C1C78EB630408F2100389BD3 /* MyiRTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = 1D8E9BAD3040730700A18E36 /* MyiR.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C1C78EB530408F2100389BD3 /* MyiRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1C78EBC30408F2100389BD3 /* Build configuration list for PBXNativeTarget "MyiRTests" */;
+			buildPhases = (
+				C1C78EB230408F2100389BD3 /* Sources */,
+				C1C78EB330408F2100389BD3 /* Frameworks */,
+				C1C78EB430408F2100389BD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1C78EBB30408F2100389BD3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C1C78EB730408F2100389BD3 /* MyiRTests */,
+			);
+			name = MyiRTests;
+			packageProductDependencies = (
+			);
+			productName = MyiRTests;
+			productReference = C1C78EB630408F2100389BD3 /* MyiRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					1D8E9BAC3040730700A18E36 = {
 						CreatedOnToolsVersion = 26.6;
+					};
+					C1C78EB530408F2100389BD3 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 1D8E9BAC3040730700A18E36;
 					};
 				};
 			};
@@ -103,12 +155,20 @@
 			projectRoot = "";
 			targets = (
 				1D8E9BAC3040730700A18E36 /* MyiR */,
+				C1C78EB530408F2100389BD3 /* MyiRTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D8E9BAB3040730700A18E36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1C78EB430408F2100389BD3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +185,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C1C78EB230408F2100389BD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1C78EBB30408F2100389BD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D8E9BAC3040730700A18E36 /* MyiR */;
+			targetProxy = C1C78EBA30408F2100389BD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D8E9BB63040730800A18E36 /* Debug */ = {
@@ -315,6 +390,48 @@
 			};
 			name = Release;
 		};
+		C1C78EBD30408F2100389BD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q22HZ2NAV4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyiRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyiR.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyiR";
+			};
+			name = Debug;
+		};
+		C1C78EBE30408F2100389BD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q22HZ2NAV4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyiRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyiR.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyiR";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -332,6 +449,15 @@
 			buildConfigurations = (
 				1D8E9BB93040730800A18E36 /* Debug */,
 				1D8E9BBA3040730800A18E36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1C78EBC30408F2100389BD3 /* Build configuration list for PBXNativeTarget "MyiRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1C78EBD30408F2100389BD3 /* Debug */,
+				C1C78EBE30408F2100389BD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
