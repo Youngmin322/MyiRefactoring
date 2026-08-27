@@ -86,11 +86,14 @@
 				};
 			};
 			buildConfigurationList = 1D8E9BA83040730700A18E36 /* Build configuration list for PBXProject "MyiR" */;
-			developmentRegion = en;
+			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ko,
+				ja,
+				"zh-Hans",
 			);
 			mainGroup = 1D8E9BA43040730700A18E36;
 			minimizedProjectReferenceProxies = 1;
