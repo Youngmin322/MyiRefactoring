@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xccheckout
+*.xcscmblueprint
+
+# 사용자별 Xcode 설정 (스킴 순서, 브레이크포인트 등 개인 환경 상태)
+xcuserdata/
+
+# Swift Package Manager
+.swiftpm/
+.build/
+
+# CocoaPods (사용 시 주석 해제)
+# Pods/
+
+# Carthage (사용 시 주석 해제)
+# Carthage/Build/
+
+# 빌드 산출물
+*.ipa
+*.dSYM.zip
+*.dSYM
