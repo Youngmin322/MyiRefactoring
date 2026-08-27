@@ -2,7 +2,7 @@
 //  MyiRApp.swift
 //  MyiR
 //
-//  Created by Youngmin Cho on 8/27/26.
+//  Created by Tom Bum Su Choi on 8/27/26.
 //
 
 import SwiftUI
