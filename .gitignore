@@ -65,3 +65,6 @@ iOSInjectionProject/
 GoogleService-Info.plist
 Secrets.swift
 .env
+
+# Local project documentation
+/docs/
