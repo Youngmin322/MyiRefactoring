@@ -8,17 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+    @StateObject private var loginViewModel: LoginViewModel
 
-#Preview {
-    ContentView()
+    init(loginViewModel: LoginViewModel) {
+        _loginViewModel = StateObject(
+            wrappedValue: loginViewModel
+        )
+    }
+
+    var body: some View {
+        LoginView(viewModel: loginViewModel)
+    }
 }

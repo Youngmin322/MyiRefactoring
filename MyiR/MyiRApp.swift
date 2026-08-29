@@ -8,10 +8,15 @@
 import SwiftUI
 
 @main
+@MainActor
 struct MyiRApp: App {
+    private let container = AppContainer()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(
+                loginViewModel: container.loginViewModel
+            )
         }
     }
 }
